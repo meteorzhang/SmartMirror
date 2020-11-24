@@ -1,0 +1,504 @@
+body, html{              
+	background: #000;       
+	padding: 0px;           
+	margin: 0px;            
+	width:100%;             
+	height: 100%;
+	font-family: "方正清刻本悦宋简体";      /*//设置段落字体*/
+	letter-spacing: -2px;                 /*  //设置字符间距，负值会让字符更加紧密*/
+	color: #fff;                          /*  //设置字体颜色为白色*/
+	font-size: 70px;                      /*  //设置字体大小*/
+	-webkit-font-smoothing: antialiased;  /*  //该属性让字体抗锯齿，看起来更加美观*/
+	-moz-osx-font-smoothing: grayscale;   /*  //该属性让字体看起来更加清晰*/
+}
+.wi {
+	line-height: 70px;
+
+}
+
+.top                     
+{
+	position: absolute;                   /*   //CSS中常见的定位，绝对位置，上部预留50像素距离*/
+	top: 50px;
+}
+
+.left
+{
+	position: absolute;
+	left: 10px;
+}
+.right
+{
+	position: absolute;
+	right: 10px;
+	text-align: right;
+	width: 300px;
+	display: none;
+}
+
+.center-ver
+{
+	position: absolute;
+	top: 50%;
+	height: 200px;
+	margin-top: -100px;
+	line-height: 100px;
+}
+
+.lower-third
+{
+	position: absolute;
+	top: 66.666%;
+	height: 200px;
+	margin-top: -100px;
+	line-height: 100px;	
+}
+
+.center-hor
+{
+	position: absolute;
+	right: 50px;
+	left: 50px;
+	text-align: center;	
+}
+
+.bottom
+{
+	position: absolute;
+	bottom: 50px;
+}
+
+.xxsmall
+{
+	font-size: 10px;
+	letter-spacing: 0px;
+	font-family: "方正清刻本悦宋简体";
+}
+.xxsmall .wi {
+	line-height: 10px;
+}
+
+.xsmall
+{
+	font-size: 15px;
+	letter-spacing: 0px;
+	font-family: "方正清刻本悦宋简体";
+}
+.xsmall .wi {
+	line-height: 15px;
+}
+
+
+.small
+{
+	font-size: 20px;
+	letter-spacing: 0px;
+	font-family: "方正清刻本悦宋简体";
+}
+.small .wi {
+	line-height: 20px;
+}
+
+.medium
+{
+	font-size: 30px;
+	letter-spacing: -1px;
+	font-family: "方正清刻本悦宋简体";
+}
+.medium .wi {
+	line-height: 30px;
+}
+
+.xdimmed
+{
+	color: #666;
+} 
+
+.dimmed
+{
+	color: #aaa;
+}
+
+.light
+{
+	font-family: "方正清刻本悦宋简体";
+}
+
+.icon 
+{
+	position: relative;
+	top :-10px;
+	display: inline-block;
+	font-size: 45px;
+	padding-right: 5px;
+	font-weight: 100;
+	margin-right: 10px;
+}
+
+.icon-small
+{
+	position: relative;
+	display: inline-block;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: -10px;
+	font-weight: 100;
+}
+
+.time .sec {
+	font-size: 25px;
+	color: #666;
+	padding-left: 5px;
+	position: relative;
+	top: -30px;
+}
+
+.forecast-table {
+	text-align: right;
+	font-size: 20px;
+	line-height: 20px;
+	width:240px;
+}
+.forecast-table .day, .forecast-table .temp-min, .forecast-table .temp-max  
+{
+	width: 50px;
+	text-align: right;
+}
+
+.forecast-table .temp-max 
+{
+	width: 60px;
+}
+
+.forecast-table .day
+{
+	color: #999;
+}
+.news , .holiday ,.post{
+	font-size: 14px;
+	color: #aaa;
+	letter-spacing: 0.2px;
+	display: none;
+	border: 1px dashed #aaa;
+	border-radius: 10px;
+	padding: 10px 5px;
+	margin-top: 25px;
+	position: relative;
+	width: 200px;
+}
+.news ul, .holiday ul, .post ul{
+	padding: 0 0 0 20px;
+	margin: 0;
+}
+.news li, .holiday li, .post li{
+	margin-top: 5px;
+}
+.post ul{
+	padding: 0;
+	list-style: none;
+}
+
+.info{
+	background-color: #fff;
+	color: #000;
+	border-radius: 10px;
+	text-align: center;
+}
+.h3{
+	font-size: 18px;
+	font-weight: 700;
+	height: 20px;
+	position: absolute;
+	top: -18px;
+	left: 10px;
+	background-color: #000;
+}
+.h3 .iconfont{
+	font-size: 22px;
+	margin-right: 5px;
+}
+.news .title,.holiday .item{
+	line-height: 18px;
+}
+.talk{
+	display: none; 
+	height: 50px;
+	padding: 0 10px;
+	background: #fff;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	right: 85px;
+	color: #000;
+	border-radius: 10px;
+}
+.talk1{
+	top: 55%;
+}
+.talk2{
+	top: 60%;
+}
+.talk3{
+	top: 65%;
+}
+.talk4{
+	top: 70%;
+}
+.talk::after{
+	content: '';
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+	position: absolute;
+	top: 20px;
+	right: -5px;
+	transform: rotate(45deg);
+}
+.avatar{
+	width: 54px;
+	height: 54px;
+	border-radius: 10px;
+	background: url(./images/atatar1.jpeg) no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: -2px;
+	right: -70px;
+}
+.talk2 .avatar{
+	background-image: url(./images/atatar2.jpeg);
+}
+.talk3 .avatar{
+	background-image: url(./images/atatar3.jpeg);
+}
+.talk4 .avatar{
+	background-image: url(./images/atatar4.jpeg);
+}
+
+.name {
+	font-size: 30px;
+}
+.dishwasher {
+	background-color: white;
+	color: black;
+	margin: 0 200px;	
+	font-size: 60px;	
+	border-radius: 1000px;
+	border-radius: 1200px;
+	display: none;
+}
+.suggestion {
+	word-wrap: break-word; 
+	word-break: normal;
+	width:240px;
+	text-align:left;
+	margin:10px 0 10px 0;
+}
+.updatetime {
+	opacity:0.6;
+	width:240px;
+}
+.windsun {
+	margin-bottom:5px;
+}
+.temhum {
+	width:240px;
+	text-align:center;
+}
+.temhum_left {
+	float:left;
+	margin:0 0 10px 20px;
+}
+.temhum_right {
+	float:right;
+	margin:0 20px 10px 0;
+}
+
+.tmp{
+	position: absolute;
+	right: 40px;
+	top: 30px;
+	font-size: 60px;
+}
+.tmp > span{
+	position: absolute;
+	top: 15px;
+	right: -25px;
+	font-size: 18px;
+}
+.iconfont.bigicon{
+	position: absolute;
+	top: 30px;
+	right: 130px;
+}
+.tmpall{
+	position: absolute;
+	top: 105px;
+	right: 10px;
+	width: 100px;
+	font-size: 16px;
+	text-align: center;
+	color: #aaa;
+}
+.city{
+	font-size: 14px;
+	position: absolute;
+	left: 35px;
+	top: 50px;
+}
+.fl{
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	width: 300px;
+	height: 30px;
+	text-align: right;
+	color: #aaa;
+	font-size: 16px;
+}
+.txt{
+	margin-right: 10px;
+}
+.lower-third{
+	font-size: 20px;
+	top: 90%;
+	letter-spacing: 5px;
+}
+.air_now_station{
+	position: absolute;
+	top: 145px;
+	right: 10px;
+	width: 240px;
+	text-align: right;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #aaa;
+}
+.cross{
+	position: absolute;
+	top: 230px;
+	right: 0;
+	width: 270px;
+	border-top: 1px dashed #fff;
+}
+.cross.first{
+	top: 140px;
+}
+.daily_forecast{
+	position: absolute;
+	top: 340px;
+	right: 10px;
+}
+.daily_forecast > table{
+	width: 260px;
+	text-align: center;
+	font-size: 16px;
+	color: #aaa;
+}
+.update{
+	font-size: 12px;
+	color: #aaa;
+	position: absolute;
+	right: 10px;
+	top: -21px;
+	letter-spacing: 1px;
+}
+.iconfont.small{
+	font-size: 14px;
+	margin-right: 5px;
+}
+.lifestyle{
+	position: absolute;
+	width: 130px;
+	top: 145px;
+	right: 133px;
+	text-align: left;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #aaa;
+}
+.hourly{
+	width: 270px;
+	height: 80px;
+	border-bottom: 1px dashed #fff;
+	position: absolute;
+	top: 240px;
+	right: 0;
+}
+.hourly ul{
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.hourly ul li{
+	color: #aaa;
+	font-size: 14px;
+	text-align: center;
+	float: left;
+	width: 20%;
+	height: 100%;
+	list-style: none;
+	letter-spacing: 0.5px;
+}
+.hourly ul li .iconfont{
+	font-size: 20px;
+	margin: 5px 0;
+}
+
+
+
+
+
+/*@font-face {                                  //@font-face是CSS3中的一个模块，主要是把自己定义的WEB字体嵌入到网页中去*/
+	font-family: 'HelveticaNeue-UltraLight';    /*//web字体名字*/
+	src: url('font/HelveticaNeue-UltraLight.eot'); /* IE9 Compat Modes */            /*//前面是定义的字体相对路径或绝对路径，后面是字体格式，帮助浏览器识别*/
+	src: url('font/HelveticaNeue-UltraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('font/HelveticaNeue-UltraLight.woff') format('woff'), /* Modern Browsers */
+	url('font/HelveticaNeue-UltraLight.ttf')  format('truetype'), /* Safari, Android, iOS */
+	url('font/HelveticaNeue-UltraLight.svg#9453ea8da727d260bcdbfa605bdbb5d2') format('svg'); /* Legacy iOS */
+	font-style:   normal;                         /*//定义字体样式。例如斜体*/
+	font-weight:  100;                            /*//定义字体是否为粗体*/
+}
+
+@font-face {
+	font-family: 'HelveticaNeue-Medium';
+	src: url('font/HelveticaNeue-Medium.eot'); /* IE9 Compat Modes */
+	src: url('font/HelveticaNeue-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('font/HelveticaNeue-Medium.woff') format('woff'), /* Modern Browsers */
+	url('font/HelveticaNeue-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+	url('font/HelveticaNeue-Medium.svg#d7af0fd9278f330eed98b60dddea7bd6') format('svg'); /* Legacy iOS */ 
+	font-style:   normal;
+	font-weight:  400;
+}
+
+@font-face {
+	font-family: 'HelveticaNeue-Light';
+	src: url('font/HelveticaNeue-Light.eot'); /* IE9 Compat Modes */
+	src: url('font/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('font/HelveticaNeue-Light.woff') format('woff'), /* Modern Browsers */
+	url('font/HelveticaNeue-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+	url('font/HelveticaNeue-Light.svg#7384ecabcada72f0e077cd45d8e1c705') format('svg'); /* Legacy iOS */      
+	font-style:   normal;
+	font-weight:  200;
+}
+
+
+@font-face {
+	font-family: 'iconfont';  /* project id 1477661 */
+	src: url('//at.alicdn.com/t/font_1477661_ikj6bfpmpdr.eot');
+	src: url('//at.alicdn.com/t/font_1477661_ikj6bfpmpdr.eot?#iefix') format('embedded-opentype'),
+	url('//at.alicdn.com/t/font_1477661_ikj6bfpmpdr.woff2') format('woff2'),
+	url('//at.alicdn.com/t/font_1477661_ikj6bfpmpdr.woff') format('woff'),
+	url('//at.alicdn.com/t/font_1477661_ikj6bfpmpdr.ttf') format('truetype'),
+	url('//at.alicdn.com/t/font_1477661_ikj6bfpmpdr.svg#iconfont') format('svg');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 100px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
