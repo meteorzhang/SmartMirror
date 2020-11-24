@@ -1,12 +1,13 @@
-#1.修改源并更新（默认的源用起来比较慢）php
-##修改软件源
-sudo sed -i 's#://raspbian.raspberrypi.org#s://mirrors.ustc.edu.cn/raspbian#g' /etc/apt/sources.list 
-sudo sed -i 's#://archive.raspberrypi.org/debian#s://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian#g' /etc/apt/sources.list.d/raspi.list
 
-##更新
+# 1.修改源并更新（默认的源用起来比较慢）php
+## 修改软件源
+> * sudo sed -i 's#://raspbian.raspberrypi.org#s://mirrors.ustc.edu.cn/raspbian#g' /etc/apt/sources.list 
+> * sudo sed -i 's#://archive.raspberrypi.org/debian#s://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian#g' /etc/apt/sources.list.d/raspi.list
+
+## 更新
 sudo apt-get update ; sudo apt-get upgrade
 
-#2.共享文件夹设置
+# 2.共享文件夹设置
 ## 安装 Samba 
 sudo apt-get install samba samba-common-bin
 
